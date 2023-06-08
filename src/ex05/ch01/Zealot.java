@@ -10,8 +10,5 @@ public class Zealot {
         this.name = name;
         this.hp = hp;
         this.attack = attack;
-    }
-
-    // 메소드
-    
+    }    
 }
