@@ -22,6 +22,6 @@ public class App {
         attack(z1, z2);
         attack(z1, d1);
         attack(d1, z2);
-        attack(z1, z2);
+        attack(z1, d2);
     }
 }

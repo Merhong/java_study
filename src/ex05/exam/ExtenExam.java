@@ -16,7 +16,7 @@ class Tiger extends 육식동물 {
     public void print() {
         System.out.println(name);
     }
-}
+}   
 
 class Lion extends 육식동물 {
     private String name;
