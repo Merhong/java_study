@@ -7,7 +7,6 @@ interface CarAble {
     void 정지();   
 }
 
-
 class Car implements CarAble {
     private void a1() {}
     private void a2() {}
