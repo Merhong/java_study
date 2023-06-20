@@ -17,4 +17,8 @@ public class VectorTest {
         }
         String s = (String) vc.get(0);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1d4aa48636566a9fefd78749697af3eef342834b

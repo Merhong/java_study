@@ -18,4 +18,8 @@ public class VectorExample01 {
         for(String s: vec)
         System.out.println(s + " ");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1d4aa48636566a9fefd78749697af3eef342834b
