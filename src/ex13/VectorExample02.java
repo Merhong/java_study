@@ -24,8 +24,4 @@ public class VectorExample02 {
         System.out.println(list);
 
     }    
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1d4aa48636566a9fefd78749697af3eef342834b
