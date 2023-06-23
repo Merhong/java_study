@@ -8,8 +8,7 @@ import java.io.InputStreamReader;
 public class Input04 {
     public static void main(String[] args) {
         // 연결 (키보드)
-        try {
-            InputStream in = new FileInputStream("input.txt");
+        try(InputStream in = new FileInputStream("input.txt");) {
             InputStreamReader ir = new InputStreamReader(in);
             BufferedReader br = new BufferedReader(ir);
             // String data = br.readLine();    // 내 버퍼를 비운다.
