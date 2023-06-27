@@ -36,12 +36,11 @@ class Buffer {
 }
 class Producer implements Runnable {
     private final Buffer buffer;
+
     public Producer(Buffer buffer) {
-
-//버퍼 참조 변수를 저장한다.
-        this.buffer= buffer;
+        // 버퍼 참조 변수를 저장
+        this.buffer = buffer;
     }
-
 
     //버퍼에 케익을 가져다 놓는다.
     public void run() {
