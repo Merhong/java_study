@@ -35,7 +35,7 @@ class Buffer {
     }
 }
 class Producer implements Runnable {
-    private Buffer buffer;
+    private final Buffer buffer;
     public Producer(Buffer buffer) {
 
 //버퍼 참조 변수를 저장한다.
@@ -56,7 +56,7 @@ class Producer implements Runnable {
     }
 }
 class Consumer implements Runnable {
-    private Buffer buffer;
+    private final Buffer buffer;
 
 //버퍼 참조 변수를 저장한다.
 
