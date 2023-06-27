@@ -12,10 +12,10 @@ public class ProgrammingGrades {
     }
 
     public static String grade(int score) {
-        if(score >= 95) return "A+";
-        else if(score<95 && score>=90) return "A0";
-        else if(score<90 && score>=80) return "B+";
-        else if(score<80 && score>=70) return "B0";
+        if (score >= 95) return "A+";
+        else if (score < 95 && score >= 90) return "A0";
+        else if (score < 90 && score >= 80) return "B+";
+        else if (score < 80 && score >= 70) return "B0";
         else return "C+";
     }
 }

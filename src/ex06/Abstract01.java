@@ -8,9 +8,10 @@ package ex06;
 abstract class 동물 {
     String name;
 
-    public void run(){
+    public void run() {
         System.out.println("달린다.");
     }
+
     public abstract void speak();
 
 }

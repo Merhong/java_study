@@ -1,6 +1,6 @@
 package ex13;
 
-import java.util.*;
+import java.util.HashSet;
 
 public class SetTest {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class SetTest {
 
         System.out.println(set);
 
-        if(set.contains("Ham")){
+        if (set.contains("Ham")) {
             System.out.println(("Ham도 포함되어 있음"));
         }
     }

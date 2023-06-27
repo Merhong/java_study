@@ -5,7 +5,7 @@ public abstract class ProtossUnit {
     private String name;
     private int hp;
     private int attack;
-    
+
     public ProtossUnit(String name, int hp, int attack) {
         this.name = name;
         this.hp = hp;

@@ -9,7 +9,10 @@ public class DeadLockTest {
             synchronized (res1) {
                 System.out.println("Thread_1: 자원 1획득");
             }
-            try { Thread.sleep(100); } catch (Exception e) {}
+            try {
+                Thread.sleep(100);
+            } catch (Exception e) {
+            }
             synchronized (res2) {
                 System.out.println("Thread_2: 자원 2획득");
             }
@@ -20,7 +23,10 @@ public class DeadLockTest {
             synchronized (res1) {
                 System.out.println("Thread_2: 자원 2획득");
             }
-            try { Thread.sleep(100); } catch (Exception e) {}
+            try {
+                Thread.sleep(100);
+            } catch (Exception e) {
+            }
             synchronized (res2) {
                 System.out.println("Thread_1: 자원 1획득");
             }

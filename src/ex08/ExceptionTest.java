@@ -8,7 +8,7 @@ public class ExceptionTest {
         try (FileReader fr = new FileReader("test.txt")) {
             char[] a = new char[50];
             fr.read(a);
-            for(char c : a) {
+            for (char c : a) {
                 System.out.println(c);
             }
         }

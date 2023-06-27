@@ -4,27 +4,24 @@ class Elis {
     int height = 160;
     int x = 0;
 
-    void eat () {
-
+    void eat() {
     }
-
-
 }
 
 class Cal01 {
-    void add(){     // void형은 리턴값이 없음.
+    void add() {     // void형은 리턴값이 없음.
         System.out.println("add 호출됨");
     }
 
-    void minus(){
+    void minus() {
         System.out.println("minus 호출됨");
     }
 
-    void multi(){
+    void multi() {
         System.out.println("multi 호출됨");
     }
 
-    void divide(){
+    void divide() {
         System.out.println("divide 호출됨");
     }
 }
@@ -42,6 +39,5 @@ public class Meth01 {
         c2.minus();
         c2.multi();
         c2.divide();
-        
     }
 }

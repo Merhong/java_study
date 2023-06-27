@@ -2,11 +2,6 @@ package ex03;
 
 public class Coin {
 
-    // 메소드(행위)
-    void printRestMoney() {
-        // 메소드의 내부 = stack 메모리
-        
-    }
     public static void main(String[] args) {
         // 500, 100, 50, 10원짜리 동전 (개수를 최소로 해서 주세요.)
         // 최대한 500원을 많이줘야함.
@@ -18,20 +13,26 @@ public class Coin {
 
         // 1번 리팩토링 : 배열 + for문
         int[] coin_arr = {500, 100, 50, 10};                 // 동전 종류
-        
 
-/*         for(int i=0; i<coin_arr.length; i++) {               
+
+/*         for(int i=0; i<coin_arr.length; i++) {
             count = restMoney / coin_arr[i];                 // 동전개수 = 돈 / 동전크기
             restMoney = restMoney % coin_arr[i];             // 하위 동전을 위한 나머지
             System.out.println(coin_arr[i]+"원 :"+ count);   // 출력
         } */
-        
+
         // for-each 문
-        for(int j : coin_arr) {
+        for (int j : coin_arr) {
             count = restMoney / coin_arr[j];                 // 동전개수 = 돈 / 동전크기
             restMoney = restMoney % coin_arr[j];             // 하위 동전을 위한 나머지
             System.out.println(coin_arr[j] + "원 :" + count);   // 출력
         }
+    }
+
+    // 메소드(행위)
+    void printRestMoney() {
+        // 메소드의 내부 = stack 메모리
+
     }
 }
 

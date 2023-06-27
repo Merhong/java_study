@@ -9,7 +9,7 @@ public class Var02 {
 
         /* 실수형 Type : float(4), double(8) */
         float f1 = 1.21231f;        // float 값 할당시 실수 뒤에 f를 붙여야 함.
-        double d1 = 210000000.1111; 
+        double d1 = 210000000.1111;
 
         /* 문자형 Type : char(2) */
         char c1 = '가';             // char ''을 사용, 문자열은 string 타입 및 "" 사용해야 함.
@@ -18,15 +18,15 @@ public class Var02 {
         boolean check = true;       // boolean은 True(1)/False(0) 만 존재하는 1비트 Type
 
         System.out.println("정수형");
-        System.out.println("byte 타입 : "+b1);
-        System.out.println("int 타입 : "+n1);
-        System.out.println("long 타입 : "+l1+"\n");
+        System.out.println("byte 타입 : " + b1);
+        System.out.println("int 타입 : " + n1);
+        System.out.println("long 타입 : " + l1 + "\n");
         System.out.println("실수형");
-        System.out.println("float 타입 : "+f1);
-        System.out.println("double 타입 : "+d1+"\n");
+        System.out.println("float 타입 : " + f1);
+        System.out.println("double 타입 : " + d1 + "\n");
         System.out.println("문자형");
-        System.out.println("char 타입 : "+c1+"\n");
+        System.out.println("char 타입 : " + c1 + "\n");
         System.out.println("Boolean");
-        System.out.println("boolean 타입 : "+check);
+        System.out.println("boolean 타입 : " + check);
     }
 }

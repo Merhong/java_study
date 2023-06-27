@@ -14,7 +14,7 @@ public class Input03 {
         try {
             String data = br.readLine();
             System.out.println(data);
-            
+
         } catch (IOException e) {
             e.printStackTrace();        // 오류 로그를 보여줌.
         }

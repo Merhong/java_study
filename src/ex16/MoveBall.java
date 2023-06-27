@@ -7,10 +7,10 @@ class Ball {
     // 공의 속성(좌표, 크기, 속도)
     private int x = 100;
     private int y = 100;
-    private int size = 30;
+    private final int size = 30;
     private int xSpeed = 10;
     private int ySpeed = 10;
-    
+
     // 공을 화면에 그려주는 메소드
     public void draw(Graphics g) {
         // 공의 색깔
@@ -22,10 +22,10 @@ class Ball {
     public void update() {
         x += xSpeed;
         y += ySpeed;
-        if((x+size) > MoveBall.BOARD_WIDTH - size || x<0) {
+        if ((x + size) > MoveBall.BOARD_WIDTH - size || x < 0) {
             xSpeed = -xSpeed;
         }
-        if((y+size) > MoveBall.BOARD_HEIGHT - size || y<0) {
+        if ((y + size) > MoveBall.BOARD_HEIGHT - size || y < 0) {
             ySpeed = -ySpeed;
         }
     }
@@ -34,7 +34,7 @@ class Ball {
 public class MoveBall extends JPanel {
     static final int BOARD_WIDTH = 600;
     static final int BOARD_HEIGHT = 300;
-    private Ball ball = new Ball();
+    private final Ball ball = new Ball();
 
     public MoveBall() {
         // 배경색 노란색으로 지정
@@ -56,17 +56,17 @@ public class MoveBall extends JPanel {
         new Thread(task).start();
     }
 
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        ball.draw(g);
-    }
-
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         frame.setSize(MoveBall.BOARD_WIDTH, MoveBall.BOARD_HEIGHT);
         frame.add(new MoveBall());
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        ball.draw(g);
     }
 }

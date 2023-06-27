@@ -13,7 +13,7 @@ public class Input02 {
             char[] ch = new char[5];
             ir.read(ch);
 
-            for(char c : ch) {
+            for (char c : ch) {
                 System.out.println(c);
             }
 

@@ -12,6 +12,7 @@ class Coffee {
 
 public class Mem01 {
     static int price = 10000;
+
     public static void main(String[] args) {
         // int num = 10;
         // System.out.println(num);
@@ -22,7 +23,7 @@ public class Mem01 {
         System.out.println(price);          // static price 호출
         // System.out.println(c.price);     // Coffee 클래스의 static price 호출이 되긴 하나
         System.out.println(Coffee.price);   // static 변수이므로 이렇게 호출해야 함.
-        
+
         c.run();
-    }    
+    }
 }

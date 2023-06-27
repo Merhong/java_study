@@ -1,7 +1,7 @@
 package ex13;
 
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 
 public class MapTest {
     public static void main(String[] args) {
@@ -14,9 +14,9 @@ public class MapTest {
         System.out.println(map.get("lee"));  // key를 가지고 값을 참조
 
         // 모든 항목 방문
-        for(String key: map.keySet()) {
+        for (String key : map.keySet()) {
             String value = map.get(key);
-            System.out.println("key="+key+", value="+value);
+            System.out.println("key=" + key + ", value=" + value);
         }
 
         map.remove("lim");                   // key값으로 항목 삭제

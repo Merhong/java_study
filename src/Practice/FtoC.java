@@ -1,6 +1,6 @@
 package Practice;
 
-import java.util.Scanner;                                   // 스캐너 클래스
+import java.util.Scanner;
 
 // 파워자바 p.77 Mini Project
 public class FtoC {
@@ -20,13 +20,13 @@ public class FtoC {
         } else if (i == 1) {                                // 화씨 -> 섭씨
             System.out.println("℉ 온도를 입력하시오: ");
             double f_temp = sc.nextDouble();                // 화씨, 키보드로 부터 실수를 입력받는다.
-            double c_temp = (f_temp - 32) * 5/9;            // 섭씨
+            double c_temp = (f_temp - 32) * 5 / 9;            // 섭씨
             System.out.println("섭씨온도는 :" + c_temp + "도 입니다.");
 
         } else if (i == 2) {                                // 섭씨 -> 화씨
             System.out.println("℃ 온도를 입력하시오: ");
             double c_temp = sc.nextDouble();                // 섭씨, 키보드로 부터 실수를 입력받는다.
-            double f_temp = (c_temp * 9/5) + 32;            // 화씨
+            double f_temp = (c_temp * 9 / 5) + 32;            // 화씨
             System.out.println("화씨온도는 :" + f_temp + "도 입니다.");
         }
         sc.close();                                         // 스캐너 닫기

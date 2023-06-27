@@ -13,10 +13,10 @@ public class VectorTest {
         // vc.add(new Integer(10));
         // vc.add(20);
 
-        System.out.println("Vector Size :" +vc.size());
+        System.out.println("Vector Size :" + vc.size());
 
-        for(int i=0; i < vc.size(); i++) {
-            System.out.println("Vector element "+ i + ": "+ vc.get(i));
+        for (int i = 0; i < vc.size(); i++) {
+            System.out.println("Vector element " + i + ": " + vc.get(i));
         }
         // String s = (String) vc.get(0);
     }

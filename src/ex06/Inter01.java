@@ -7,6 +7,7 @@ package ex06;
  */
 interface Remote {
     int NUM = 10; // public static final 생략 되어 있음.
+
     void num(); // public abstract 생략
 }
 

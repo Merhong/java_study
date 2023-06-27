@@ -13,6 +13,6 @@ public class ArrayListTest2 {
 
         int index = list.indexOf("Mango");
 
-        System.out.println("Mango의 위치:"+index);
+        System.out.println("Mango의 위치:" + index);
     }
 }

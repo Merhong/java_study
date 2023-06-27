@@ -3,6 +3,7 @@ package ex06;
 // 인터페이스
 interface Remocon {
     void on();
+
     void off();
 }
 
@@ -15,7 +16,7 @@ class 삼성 implements Remocon {
     @Override
     public void on() {
         System.out.println("티비 켜다");
-    }    
+    }
 }
 
 class 엘지 implements Remocon {
@@ -23,6 +24,7 @@ class 엘지 implements Remocon {
     public void off() {
         System.out.println("티비 끄다");
     }
+
     @Override
     public void on() {
         System.out.println("티비 켜다");

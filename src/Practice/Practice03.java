@@ -1,6 +1,7 @@
 package Practice;
-import java.util.Scanner;               // 스캐너
-import java.util.StringTokenizer;       // 토크나이저
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
 //import java.math.*;                     // 절대값용 Math
 
 public class Practice03 {
@@ -35,7 +36,7 @@ public class Practice03 {
         // 변경할 항목이 year일때
         if (type1.equals("year")) {       // 문자열을 비교연산자 ==으로 했을때 가르키는 주소가 달라서 다른곳으로 튐.
             yyyy = yyyy + num1;                    // 현재 연도와 변경할 값을 더해준다.
-            System.out.println(yyyy+"-"+mm+"-"+dd+"\n\n");
+            System.out.println(yyyy + "-" + mm + "-" + dd + "\n\n");
             sc.close();
         }
 
@@ -43,19 +44,19 @@ public class Practice03 {
         else if (type1.equals("month")) { // 현재 월과 변경할 값을 더해준다.   
 
             // num1이 양수 값인 경우 (월 증가)
-            if(num1 > 0) {                         // 12월을 넘게 되면 다음해로 넘어감.
-                yyyy = yyyy + (mm+num1 - 1) / 12;  // num1 > 12면 yyyy+1
-                mm = (mm+num1 - 1) % 12 + 1;       // 1월 ~ 12월만 존재함.
-                System.out.println(yyyy+"-"+mm+"-"+dd+"\n\n");
+            if (num1 > 0) {                         // 12월을 넘게 되면 다음해로 넘어감.
+                yyyy = yyyy + (mm + num1 - 1) / 12;  // num1 > 12면 yyyy+1
+                mm = (mm + num1 - 1) % 12 + 1;       // 1월 ~ 12월만 존재함.
+                System.out.println(yyyy + "-" + mm + "-" + dd + "\n\n");
             }
 
             //  num1이 음수 값인 경우 (월 감소)
-            else if(num1 < 0) {
+            else if (num1 < 0) {
                 int y_dec = Math.abs(num1) / 12;        // 연도를 빼기위한 변수
                 int m_dec = Math.abs(num1) % 12 + 1;    // 월을 빼기위한 변수 +1은 0월 방지용
 
                 //month보다 큰 값이 빼지면
-                if(m_dec >= mm) {           // ex) 1월인데 1개월이상 빼는 경우 1년 감소후 +월 할당
+                if (m_dec >= mm) {           // ex) 1월인데 1개월이상 빼는 경우 1년 감소후 +월 할당
                     y_dec = y_dec++;        // 12개월 단위로 1년씩 더 감소한다.
                     m_dec = m_dec - mm;     // 월 감소에서 month를 뺀다.
                 }
@@ -64,15 +65,15 @@ public class Practice03 {
                 mm = mm - m_dec;            // 월 재할당
 
                 // month가 음수거나 0일때 12를 더하여 1~12월 유지
-                if (mm <= 0) { 
+                if (mm <= 0) {
                     yyyy--;
                     mm = mm + 12;
                 }
-                System.out.println(yyyy+"-"+mm+"-"+dd+"\n\n");
+                System.out.println(yyyy + "-" + mm + "-" + dd + "\n\n");
             }
             // num1 = 0
-            else { 
-                System.out.println(yyyy+"-"+mm+"-"+dd+"\n\n");
+            else {
+                System.out.println(yyyy + "-" + mm + "-" + dd + "\n\n");
             }
             sc.close();
         }
@@ -230,7 +231,7 @@ public class Practice03 {
             sc.close();
         }
 
-            // 변경할 항목이 잘못 입력됐을때
+        // 변경할 항목이 잘못 입력됐을때
         else {
             System.out.println("잘못된 항목을 입력하였습니다.");
             sc.close();

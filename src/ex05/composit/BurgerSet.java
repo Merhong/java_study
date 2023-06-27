@@ -5,11 +5,11 @@ package ex05.composit;
  * 다중상속이 불가능한 자바에서 사용.
  * "has a(가지고 있는)" 관계일때 사용.
  * 생성자를 private로 캡슐화
-*/
+ */
 public class BurgerSet {
-    private Burger burger;
-    private Coke coke;
-    private Potato potato;
+    private final Burger burger;
+    private final Coke coke;
+    private final Potato potato;
 
     public BurgerSet() {
         this(new Burger(), new Coke(), new Potato());

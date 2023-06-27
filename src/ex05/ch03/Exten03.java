@@ -3,7 +3,7 @@ package ex05.ch03;
 // 추상 클래스, new를 못함. 자식을 통해서 Heap에 띄워질 수 있음.
 abstract class Animal {     // 추상 메소드, 구체적 행위가 없음.
     abstract void speak();  // 자식 클래스에서 무조건 재정의(구현) 해야 함.
-                            
+
 }
 
 class Bird extends Animal {
@@ -45,5 +45,5 @@ public class Exten03 {
 
         Animal b = new Bird();
         start(b);
-    }    
+    }
 }

@@ -1,8 +1,8 @@
 package ex05.composit;
 
 public class Burger {
-    private int price;
-    private String desc;
+    private final int price;
+    private final String desc;
 
     // Default Constructor  
     public Burger() {

@@ -15,7 +15,7 @@ public class Var03 {
         // 문자 형변환(아스키코드)
         int ch = 65;                // byte(1바이트), int(4), char(2)
         byte ch2 = 65;
-        char data = (char)ch;       // 형변환
+        char data = (char) ch;       // 형변환
         char data2 = (char) ch2;    // 형변환
 
         System.out.println(data);   // A 출력

@@ -6,7 +6,7 @@ abstract class 육식동물 {
 }
 
 class Tiger extends 육식동물 {
-    private String name;
+    private final String name;
 
     public Tiger(String name) {
         this.name = name;
@@ -16,10 +16,10 @@ class Tiger extends 육식동물 {
     public void print() {
         System.out.println(name);
     }
-}   
+}
 
 class Lion extends 육식동물 {
-    private String name;
+    private final String name;
 
     public Lion(String name) {
         this.name = name;

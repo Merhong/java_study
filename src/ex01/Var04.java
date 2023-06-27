@@ -11,6 +11,6 @@ public class Var04 {
         int age = 25;
         System.out.println(name + age);          // 홍길동25
         System.out.println(name + " " + age);    // 홍길동 25
-        System.out.println(name +"의 나이는 " + age); // 홍길동의 나이는 25
+        System.out.println(name + "의 나이는 " + age); // 홍길동의 나이는 25
     }
 }

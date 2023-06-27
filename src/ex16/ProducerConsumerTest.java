@@ -34,6 +34,7 @@ class Buffer {
         notifyAll();
     }
 }
+
 class Producer implements Runnable {
     private final Buffer buffer;
 
@@ -54,6 +55,7 @@ class Producer implements Runnable {
         }
     }
 }
+
 class Consumer implements Runnable {
     private final Buffer buffer;
 
@@ -62,7 +64,7 @@ class Consumer implements Runnable {
     public Consumer(Buffer drop) {
 
 //버퍼에서 케익을 가져온다.
-        this.buffer= drop;
+        this.buffer = drop;
     }
 
     public void run() {
@@ -76,6 +78,7 @@ class Consumer implements Runnable {
         }
     }
 }
+
 public class ProducerConsumerTest {
     public static void main(String[] args) {
         Buffer buffer = new Buffer();

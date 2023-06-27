@@ -14,7 +14,7 @@ public class App {
 
     public static void main(String[] args) {
         ProtossUnit z1 = new Zealot("질럿1", 100, 10);
-        ProtossUnit d1 = new Dragoon("드라군1",100, 5);
+        ProtossUnit d1 = new Dragoon("드라군1", 100, 5);
 
         attack(z1, d1);
     }

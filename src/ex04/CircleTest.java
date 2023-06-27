@@ -8,6 +8,6 @@ public class CircleTest {
         obj.color = "blue";
         double area = obj.getArea();
 
-        System.out.println("원의 면적:"+area);
+        System.out.println("원의 면적:" + area);
     }
 }

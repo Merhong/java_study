@@ -6,27 +6,6 @@ class Data<T> {
 }
 
 public class Generic03 {
-    // 와일드카드 : 물음표(?)
-    Data<?> getNum(int check) {
-        if(check == 1) {
-            Data<String> data = new Data<>();
-            return data;
-        }
-        else { // (check != 1)
-            Data<Integer> data = new Data<>();
-            return data;
-        } 
-    }
-
-    Object getNum2(int check) {
-        if(check == 1) {
-            return "안녕";
-        }
-        else { // (check != 1)
-            return 1;
-        } 
-    }
-
     public static void main(String[] args) {
         Generic03 g3 = new Generic03();
         // int n = g3.getNum2(1);  // (int) 다운캐스팅 필요
@@ -36,5 +15,24 @@ public class Generic03 {
 
         System.out.println(d);
         // System.out.println(d2);
+    }
+
+    // 와일드카드 : 물음표(?)
+    Data<?> getNum(int check) {
+        if (check == 1) {
+            Data<String> data = new Data<>();
+            return data;
+        } else { // (check != 1)
+            Data<Integer> data = new Data<>();
+            return data;
+        }
+    }
+
+    Object getNum2(int check) {
+        if (check == 1) {
+            return "안녕";
+        } else { // (check != 1)
+            return 1;
+        }
     }
 }
