@@ -1,7 +1,8 @@
 package ex16;
 
 class Printer{
-    void print(int arr[]){
+    // synchronized 키워드를 사용하면 쓰레드 순서대로 잘 나옴 but 안쓰면 결과가 뒤죽박죽이 된다.
+    synchronized void print(int arr[]){
         for(int i=0; i<arr.length; i++) {
             System.out.println(arr[i] + " ");
             try {
