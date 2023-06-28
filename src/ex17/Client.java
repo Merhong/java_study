@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class Client {
 
+
   public static void main(String[] args) throws IOException {
     Socket clientSocket = null;  // Socket 객체 생성
     BufferedReader in = null;
