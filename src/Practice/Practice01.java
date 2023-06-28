@@ -1,6 +1,6 @@
 package Practice;
-//import java.util.*;             // util 클래스의 모든것을 받아옴
-//import java.util.Scanner;       // 키보드 입력을 받기위한 스캐너 클래스
+// import java.util.*;             // util 클래스의 모든것을 받아옴
+// import java.util.Scanner;       // 키보드 입력을 받기위한 스캐너 클래스
 // /* */ 주석처리는 Ctrl + Shift + /        // 주석처리는 Ctrl + /
 
 /* // p.65
@@ -39,7 +39,7 @@ public class Practice01 {
     }
 } */
 
-//p.70
+// p.70
 /* public class Practice01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

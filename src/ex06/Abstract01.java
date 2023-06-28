@@ -6,23 +6,23 @@ package ex06;
  * 3. 추상클래스는 (상태)변수를 가질 수 있다.
  */
 abstract class 동물 {
-    String name;
+	String name;
 
-    public void run() {
-        System.out.println("달린다.");
-    }
+	public void run() {
+		System.out.println("달린다.");
+	}
 
-    public abstract void speak();
+	public abstract void speak();
 
 }
 
 class 사자 extends 동물 {
-    @Override
-    public void speak() {
-        System.out.println("어흥");
-    }
+	@Override
+	public void speak() {
+		System.out.println("어흥");
+	}
 }
 
 public class Abstract01 {
-    // new 동물();   
+	// new 동물();
 }

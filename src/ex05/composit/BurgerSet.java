@@ -7,29 +7,29 @@ package ex05.composit;
  * 생성자를 private로 캡슐화
  */
 public class BurgerSet {
-    private final Burger burger;
-    private final Coke coke;
-    private final Potato potato;
+	private final Burger burger;
+	private final Coke coke;
+	private final Potato potato;
 
-    public BurgerSet() {
-        this(new Burger(), new Coke(), new Potato());
-    }
+	public BurgerSet() {
+		this(new Burger(), new Coke(), new Potato());
+	}
 
-    private BurgerSet(Burger burger, Coke coke, Potato potato) {
-        this.burger = burger;
-        this.coke = coke;
-        this.potato = potato;
-    }
+	private BurgerSet(Burger burger, Coke coke, Potato potato) {
+		this.burger = burger;
+		this.coke = coke;
+		this.potato = potato;
+	}
 
-    public Burger getBurger() {
-        return burger;
-    }
+	public Burger getBurger() {
+		return burger;
+	}
 
-    public Coke getCoke() {
-        return coke;
-    }
+	public Coke getCoke() {
+		return coke;
+	}
 
-    public Potato getPotato() {
-        return potato;
-    }
+	public Potato getPotato() {
+		return potato;
+	}
 }
