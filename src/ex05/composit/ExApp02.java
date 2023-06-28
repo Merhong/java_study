@@ -1,7 +1,8 @@
 package ex05.composit;
 
 public class ExApp02 {
-	public static void main(String[] args) {
+
+  public static void main(String[] args) {
 /*      Coke c2 = new Coke(400,"콜라");
         
         // 버거 세트
@@ -11,5 +12,5 @@ public class ExApp02 {
         System.out.println("=============");
         // BurgerSet bs1 = new BurgerSet(b1, c1, p1);
         BurgerSet bs2 = new BurgerSet(); */
-	}
+  }
 }   

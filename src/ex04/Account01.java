@@ -2,38 +2,39 @@ package ex04;
 
 // Meth03에 Account 클래스 존재
 public class Account01 {
-	private int regNumber;
-	private String name;
-	private int balance;
 
-	public static void main(String[] args) {
-		Account01 obj = new Account01();
-		obj.setName("Tom");
-		obj.setBalance(1000000);
-		System.out.println("이름은 " + obj.getName() + " 통장잔고는 " + obj.getBalance() + "입니다.");
-	}
+  private int regNumber;
+  private String name;
+  private int balance;
 
-	public int getRegNumber() {
-		return regNumber;
-	}
+  public static void main(String[] args) {
+    Account01 obj = new Account01();
+    obj.setName("Tom");
+    obj.setBalance(1000000);
+    System.out.println("이름은 " + obj.getName() + " 통장잔고는 " + obj.getBalance() + "입니다.");
+  }
 
-	public void setRegNumber(int regNumber) {
-		this.regNumber = regNumber;
-	}
+  public int getRegNumber() {
+    return regNumber;
+  }
 
-	public String getName() {
-		return name;
-	}
+  public void setRegNumber(int regNumber) {
+    this.regNumber = regNumber;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public int getBalance() {
-		return balance;
-	}
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	public void setBalance(int balance) {
-		this.balance = balance;
-	}
+  public int getBalance() {
+    return balance;
+  }
+
+  public void setBalance(int balance) {
+    this.balance = balance;
+  }
 }
